@@ -1,6 +1,6 @@
 # Loopstudios Website
 
-This is a fully responsive website landing page made with next js issues and material-ui, it was a challenge from [Frontenmentor]('https://www.frontendmentor.io/).
+This is a fully responsive website landing page made with next js and material-ui, it was a challenge from [Frontenmentor]('https://www.frontendmentor.io/).
 
 ## Technologies
 + [Material-ui](https://mui.com/)
