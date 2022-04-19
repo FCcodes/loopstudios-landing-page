@@ -73,7 +73,7 @@ const HomeImageProfile = ({ option }) => {
 				"/images/desktop/image-pocket-borealis.jpg",
 			imageMobileWidth: "654",
 			imageDesktopWidth: "256",
-			text: "DEEP EARTH",
+			text: "POCKET BOREALIS",
 			focus: "center",
 		},
 		{
@@ -116,14 +116,15 @@ const HomeImageProfile = ({ option }) => {
 						position: "relative",
 						width: { phone: "100%" },
 						height: {
-							phone: "25rem",
-							tablet: "80vw",
-							tabletsm: "26rem",
+							phone: "125vw",
+							tablet: "130vw",
+							tabletsm: "23rem",
 							tabletxl: "50vw",
 							laptop: "35vw",
-							desktop: "25.7rem",
+							desktop: "23rem",
 							desktopxl: "29rem",
 						},
+						maxHeight: {tablet: "548px", tabletxl: "363px", laptop: "321px", desktop: "none"}
 					}}
 				>
 					<Image
@@ -135,6 +136,17 @@ const HomeImageProfile = ({ option }) => {
 							content[option].focus
 						}
 					/>
+					<Typography
+						variant="h4"
+						sx={{
+							position: "absolute",
+							bottom: {phone: "8vw", tablet: "3vw", tabletxl: "3.5vw", desktop: "25px"},
+							left: {phone: "5vw", tablet: "5vw", desktop: "30px"},
+							width: {phone: "60%", desktop: "60%", desktopxl: "55%"},							
+						}}
+					>
+						{content[option].text}
+					</Typography>
 				</Box>
 			</Grid>
 		</>

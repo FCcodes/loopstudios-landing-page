@@ -32,317 +32,371 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<Box className="HOME_PAGE_CONTAINER" sx={{
-        mx: {phone: "auto"},
-        maxWidth: {phone: "350px"},
-        width: {phone: "300px"}
-      }}>
+			<Box className="HOME_PAGE_CONTAINER" sx={{mx: "auto", maxWidth: "1530px"}}>
 				<Box
 					component="header"
 					sx={{
 						py: { phone: 5, laptop: 8 },
-						mb: { phone: 5 },
+						pb: { tabletxl: 0 },
+						mb: { phone: 15, laptop: 20 },
 						height: {
-							tabletxl: "40vh",
-							laptop: "50vh",
-							desktop: "70vh",
+							phone: "30rem",
+							tabletxl: "30rem",
+							laptop: "37rem",
+							desktop: "39rem",
+							desktopxl: "40rem",
 						},
-            position: "relative",
-            "&::before": {
-              content: "''",
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              zIndex: -1
-            }
+						maxHeight: { tabletxl: "none" },
+						position: "relative",
+						"&::before": {
+							content: "''",
+							position: "absolute",
+							top: 0,
+							left: 0,
+							width: "100%",
+							height: "100%",
+							backgroundImage: {
+								phone: "url(/images/mobile/image-hero.jpg)",
+								tabletxl: "url(/images/desktop/image-hero.jpg)",
+							},
+							backgroundSize: "cover",
+							zIndex: -1,
+						},
 					}}
 				>
 					<Box
-						component="nav"
+						className="CONTAINER"
 						sx={{
+							px: { phone: 5 },
+							mx: { phone: "auto" },
 							display: "flex",
-							alignItems: "center",
-							position: "relative",
+							flexDirection: "column",
 							maxWidth: {
-								desktopxl: "1100px",
+								phone: "380px",
+								tablet: "420px",
+								tabletsm: "530px",
+								tabletxl: "700px",
+								tabletxll: "740px",
+								laptop: "850px",
+								desktop: "1000px",
+								desktopxl: "1200px",
 							},
-							zIndex: 10,
+							height: "100%",
 						}}
 					>
-						<Typography
-							variant="subtitle1"
-							className="logo"
-							sx={{
-								flex: 1,
-							}}
-						>
-							INSURE
-						</Typography>
-
 						<Box
-							className="NAV_LINKS"
+							component="nav"
 							sx={{
-								display: {
-									phone: "none",
-									tabletxl: "flex",
-								},
-								alignItems: {
-									tabletxl: "baseline",
-								},
-							}}
-						>
-							<Box
-								className="links"
-								sx={{ mr: { tabletxl: 5 } }}
-							>
-								<Typography
-									variant="subtitle2"
-									sx={{
-										mx: {
-											tabletxl: 0.8,
-											laptop: 2,
-										},
-									}}
-								>
-									HOW WE WORK
-								</Typography>
-
-								<Typography
-									variant="subtitle2"
-									sx={{
-										mx: {
-											tabletxl: 0.8,
-											laptop: 2,
-										},
-									}}
-								>
-									BLOG
-								</Typography>
-
-								<Typography
-									variant="subtitle2"
-									sx={{
-										mx: {
-											tabletxl: 0.8,
-											laptop: 2,
-										},
-									}}
-								>
-									ACCOUNT
-								</Typography>
-
-								<Typography
-									variant="subtitle2"
-									sx={{
-										mx: {
-											tabletxl: 0.8,
-											laptop: 2,
-										},
-									}}
-								>
-									Blog
-								</Typography>
-							</Box>
-
-							<Box
-								component="button"
-								sx={{
-									py: 1,
-									px: 2,
-									display: "block",
-									border: "none",
-									outline: "none",
-									backgroundColor:
-										"white",
-									border: "2px solid hsl(256, 26%, 20%)",
-									transform: {
-										tabletxl:
-											"scale(.7)",
-										tabletxl:
-											"scale(.8)",
-									},
-								}}
-							>
-								VIEW PLANS
-							</Box>
-						</Box>
-
-						<Box
-							sx={{
-								display: {
-									phone: "flex",
-									tabletxl: "none",
-								},
-								flexDirection: "column",
-								justifyContent:
-									"space-between",
-								width: "25px",
-								height: "15px",
-							}}
-						>
-							<Box
-								component="span"
-								className="line"
-								sx={{
-									width: "100%",
-									height: {
-										phone: "1px",
-									},
-									backgroundColor:
-										"black",
-								}}
-							></Box>
-							<Box
-								component="span"
-								className="line"
-								sx={{
-									width: "100%",
-									height: {
-										phone: ".8px",
-									},
-									backgroundColor:
-										"black",
-								}}
-							></Box>
-							<Box
-								component="span"
-								className="line"
-								sx={{
-									width: "100%",
-									height: {
-										phone: "1px",
-									},
-									backgroundColor:
-										"black",
-								}}
-							></Box>
-						</Box>
-					</Box>
-
-					<Box
-						component="section"
-						className="HEADER_BODY"
-						sx={{
-							my: { phone: 5, tabletxl: 10 },
-						}}
-					>
-						<Paper
-							elevation={0}
-							sx={{
-								p: 3,
-								px: { laptop: 6 },
-								borderRadius: "0px",
-								border: "3px solid white",
-								background: "none",
-								width: { tablet: "65%" },
-								maxWidth: {
-									tabletxl: "420px",
-								},
+								width: { phone: "100%" },								
+								display: "flex",
+								alignItems: "center",
+								position: "relative",
+								zIndex: 10,
 							}}
 						>
 							<Typography
-								variant="h1"
-								sx={{ color: "white" }}
+								variant="subtitle1"
+								className="LOGO"
+								sx={{
+									flex: 1,
+								}}
 							>
-								IMMERSIVE EXPERIENCES THAT
-								DELIVER
+								loopstudios
 							</Typography>
-						</Paper>
+
+							<Box
+								className="NAV_LINKS"
+								sx={{
+									display: {
+										phone: "none",
+										tabletxll: "flex",
+									},
+									alignItems: {
+										tabletxl:
+											"baseline",
+									},
+								}}
+							>
+								<Box className="links">
+									<Typography
+										variant="subtitle2"
+										sx={{
+											mx: {
+												tabletxl: 2,
+												laptop: 2,
+											},
+											color: "grey.200",
+										}}
+									>
+										About
+									</Typography>
+
+									<Typography
+										variant="subtitle2"
+										sx={{
+											mx: {
+												tabletxl: 2,
+												laptop: 2,
+											},
+										}}
+									>
+										Careers
+									</Typography>
+
+									<Typography
+										variant="subtitle2"
+										sx={{
+											mx: {
+												tabletxl: 2,
+												laptop: 2,
+											},
+										}}
+									>
+										Events
+									</Typography>
+
+									<Typography
+										variant="subtitle2"
+										sx={{
+											mx: {
+												tabletxl: 2,
+												laptop: 2,
+											},
+										}}
+									>
+										Products
+									</Typography>
+
+									<Typography
+										variant="subtitle2"
+										sx={{
+											mx: {
+												tabletxl: 2,
+												laptop: 2,
+											},
+										}}
+									>
+										Support
+									</Typography>
+								</Box>
+							</Box>
+
+							<Box
+								sx={{
+									display: {
+										phone: "flex",
+										tabletxll: "none",
+									},
+									flexDirection: "column",
+									justifyContent:
+										"space-between",
+									width: "25px",
+									height: "15px",
+								}}
+							>
+								<Box
+									component="span"
+									className="line"
+									sx={{
+										width: "100%",
+										height: {
+											phone: "1px",
+										},
+										backgroundColor:
+											"white",
+									}}
+								></Box>
+								<Box
+									component="span"
+									className="line"
+									sx={{
+										width: "100%",
+										height: {
+											phone: ".8px",
+										},
+										backgroundColor:
+											"white",
+									}}
+								></Box>
+								<Box
+									component="span"
+									className="line"
+									sx={{
+										width: "100%",
+										height: {
+											phone: "1px",
+										},
+										backgroundColor:
+											"white",
+									}}
+								></Box>
+							</Box>
+						</Box>
+
+						<Box
+							component="section"
+							className="HEADER_BODY"
+							sx={{
+								my: { phone: "auto", laptop: 0 },
+								mt: {laptop: "17%", desktop: "15%"},
+								mx: {
+									phone: "auto",
+									tabletsm: 0,
+								},
+								width: { phone: "100%" },
+								maxWidth: {
+									tabletxl: "480px",
+									desktop: "500px",
+								},
+								//height: {tabletsm: "10rem"}
+							}}
+						>
+							<Paper
+								elevation={0}
+								sx={{
+									p: {
+										phone: 3,
+										tablet: 5,
+										tabletsm: 5,
+									},
+									px: { laptop: 6 },
+									borderRadius: "0px",
+									border: "3px solid white",
+									background: "none",
+									height: {
+										tabletsm: "100%",
+									},
+									display: "flex",
+									alignItems: "center",
+								}}
+							>
+								<Typography
+									variant="h1"
+									sx={{
+										color: "white",
+										width: {
+											tabletxl:
+												"291px",
+											desktop:
+												"300px",
+										},
+									}}
+								>
+									IMMERSIVE EXPERIENCES
+									THAT DELIVER
+								</Typography>
+							</Paper>
+						</Box>
 					</Box>
 				</Box>
 
 				<Box
 					component="main"
 					sx={{
-						mx: { laptop: "auto" },
+						mb: { phone: 15, laptop: 20 },
+						mx: { phone: "auto" },
+						px: { phone: 5 },
+						width: { phone: "100%" },						
 						maxWidth: {
-							laptop: "900px",
+							phone: "380px",
+							tablet: "420px",
+							tabletsm: "530px",
+							tabletxl: "700px",
+							tabletxll: "740px",
+							laptop: "850px",
 							desktop: "1000px",
 							desktopxl: "1200px",
 						},
 					}}
 				>
-					<Grid
-						container
+					<Box
 						component="section"
 						sx={{
-							my: 10,
+							mb: { phone: 15 },
 							position: "relative",
+							height: {
+								tabletsm: "27rem",
+								laptop: "35rem",
+								desktop: "35rem",
+							},
+							// backgroundColor: "grey.200",
 						}}
 					>
-						<Grid
-							item
-							phone={12}
-							tabletxl={7}
+						<Box
 							sx={{
-								height: {
-									phone: "25vh",
-									tabletxl: "40vh",
-									laptop: "50vh",
-									desktop: "60vh",
+								mb: {
+									phone: 5,
+									tabletsm: 0,
 								},
+								height: {
+									phone: "50vw",
+									tablet: "55vw",
+									tabletsm: "60vw",
+									tabletxl: "49vw",
+									laptop: "50vw",
+									desktop: "40vw",
+								},
+								maxHeight: {desktop: "450px"},
+								width: {
+									phone: "100%",
+									tabletsm: "80%",
+									tabletxl: "75%",
+									desktop: "75%",
+								},
+								position: "relative",
 							}}
+							className="IMAGE_CONTAINER"
 						>
-							<Box
-								sx={{
-									m: 0,
-									p: 0,
-									width: "100%",
-									height: "100%",
-									position: "relative",
-								}}
-							>
-								<Image
-									src="/images/desktop/image-interactive.jpg"
-									alt="Picture of am man wearing a vr head set"
-									layout="fill"
-									objectFit="contain"
-									className="interactive-image"
-								/>
-							</Box>
-						</Grid>
+							<Image
+								src="/images/desktop/image-interactive.jpg"
+								alt="Picture of am man wearing a vr head set"
+								layout="fill"
+								objectFit="contain"
+								className="interactive-image"
+							/>
+						</Box>
 
-						{/* <Grid
-							item
-							phone={0}
-							tabletxl={5}
-							sx={{
-								height: {
-									tabletxl: "50vh",
-									laptop: "65vh",
-								},
-							}}
-						></Grid> */}
-
-						<Grid
-							item
+						<Box
 							phone={12}
-							tabletxl={7}
+							tabletsm={8}
 							sx={{
+								mx: { phone: "auto" },
+								px: { tabletsm: 5, desktop: 7 },
+								maxWidth: {
+									phone: "280px",
+									tabletxl: "300px",
+									laptop: "400px",
+									desktop: "460px",
+								},
+								height: {
+									phone: "200px",
+									tabletsm: "240px",
+									tabletxl: "240px",
+									laptop: "280px",
+									desktop: "300px",
+								},
 								position: {
 									phone: "relative",
-									tabletxl: "absolute",
+									tabletsm: "absolute",
 								},
 								bottom: 0,
 								right: {
-									phone: 0,
-									laptop: 150,
+									tabletsm: 0,
+									laptop: 0,
 								},
+								backgroundColor: "white",
 							}}
 						>
 							<Paper
 								elevation={0}
 								sx={{
-									p: 5,
-
-									width: {
-										tabletxl: "100%",
-									},
-									maxWidth: {
-										tabletxl: "420px",
-									},
+									borderRadius: "0px",
+									width: "100%",
+									height: "100%",
+									display: "flex",
+									flexDirection: "column",
+									justifyContent:
+										"center",
 								}}
 							>
 								<Typography
@@ -352,6 +406,7 @@ export default function Home() {
 										width: {
 											phone: "80%",
 										},
+										color: "black",
 									}}
 								>
 									THE LEADER IN
@@ -378,13 +433,11 @@ export default function Home() {
 									their brand.
 								</Typography>
 							</Paper>
-						</Grid>
-					</Grid>
+						</Box>
+					</Box>
 
-					<Grid
-						container
-						component="section"
-						sx={{ my: 10 }}
+					<Box						
+						component="section"						
 					>
 						<Paper
 							elevation={0}
@@ -399,7 +452,10 @@ export default function Home() {
 								width: "100%",
 							}}
 						>
-							<Typography variant="h3">
+							<Typography
+								variant="h3"
+								sx={{ color: "black" }}
+							>
 								Our Creation
 							</Typography>
 
@@ -412,6 +468,7 @@ export default function Home() {
 									border: "2px solid black",
 									backgroundColor:
 										"white",
+									color: "black",
 									letterSpacing: "5px",
 									fontSize: {
 										phone: ".5rem",
@@ -439,7 +496,7 @@ export default function Home() {
 							<HomeImageProfile option={6} />
 							<HomeImageProfile option={7} />
 						</Grid>
-					</Grid>
+					</Box>
 				</Box>
 
 				<Box

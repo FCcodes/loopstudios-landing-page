@@ -1,6 +1,6 @@
 # Loopstudios Website
 
-This is a website made with react and material-ui, it was a callenge from [Frontenmentor]('https://www.frontendmentor.io/)
+This is a fully responsive website landing page made with next js issues and material-ui, it was a challenge from [Frontenmentor]('https://www.frontendmentor.io/).
 
 ## Technologies
 + [Material-ui](https://mui.com/)
@@ -10,12 +10,12 @@ This is a website made with react and material-ui, it was a callenge from [Front
 
 + ### Mobile
 
-<img src="./public/images/Screenshot 2022-01-18 at 10-13-38 Loop Studios.png" alt=""/>
+<img src="./public/designs/loopstudios_mobile_view.png" alt=""/>
 
 + ### Tablet
 
-<img src="./public/images/Screenshot 2022-01-18 at 10-13-55 Loop Studios.png" alt="" >
+<img src="./public/designs/loopstudios_tablet_view.png" alt="" >
 
 + ### Laptop
 
-<img src="./public/images/Screenshot 2022-01-18 at 10-14-05 Loop Studios.png" alt="">
+<img src="./public/designs/loopstudios_desktop_view.png" alt="">
