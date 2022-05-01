@@ -14,14 +14,7 @@ a {
 
 * {
   box-sizing: border-box;
+  color: white
 }
 
-.interactive-image {
-  object-fit: cover;
-  object-position: center;
-}
 
-.gallery-image {
-  object-fit: cover;
-  object-position: center;
-}
